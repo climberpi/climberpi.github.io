@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="量子哈密顿量复杂性浅说"/>
+
+
+
+
+  <meta name="keywords" content="理论计算机科学, 量子计算理论, 凝聚态物理, Complexity Meets Quantum" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Complexity Meets Quantum">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.6.0" />
+
+
+
+<link rel="canonical" href="http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  
+
+
+  <script id="google_analytics">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-116370825-1', 'auto');
+        ga('send', 'pageview');
+  </script>
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.1.1/av-min.js"></script>
+  <script id="leancloud">
+    AV.init({
+      appId: "nI9TEHVDOnoMEywQ0nzNyJOI-gzGzoHsz",
+      appKey: "rvxJbiglsBWMoxSQsvwmwX7d"
+    });
+  </script>
+
+
+
+
+
+    <title> 量子哈密顿量复杂性浅说 - Complexity Meets Quantum </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="mobile-header-logo">
+    <a href="/." class="logo">Complexity Meets Quantum</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+      <a href="/search">
+        <li class="mobile-menu-item">
+          
+          
+            Search
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Complexity Meets Quantum</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/search">
+            
+            
+              Search
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          量子哈密顿量复杂性浅说
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-03-25
+        </span>
+        
+        
+        <div class="post-visits"
+             data-url="/2018/03/25/intro-hamiltonion-complexity/"
+             data-title="量子哈密顿量复杂性浅说">
+            阅读次数
+          </div>
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算基态能量-lhp-qma-二分定理"><span class="toc-text"> 计算基态能量: LHP, QMA, 二分定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算基态-面积定律-张量网络-随机行走概率方法"><span class="toc-text"> 计算基态: 面积定律, 张量网络, 随机行走/概率方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基态能量能被很好地近似吗-量子-pcp-猜想"><span class="toc-text"> 基态能量能被很好地近似吗: 量子 PCP 猜想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-text"> 参考文献</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <p>简单地说, 哈密顿量复杂性是从计算复杂性理论的角度来理解局部哈密顿量 (local Hamiltonian) 和基态 (包括基态本身和基态能量):</p>
+<ul>
+<li>从计算机科学的角度来看, 这是对约束可满足性问题 (constraint satisfaction problem, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{CSP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">S</span><span class="mord mathsf">P</span></span></span></span></span>) 的进一步推广, 而与之相关的一系列结果 (包括 PCP 定理) 在量子情形下的对应并不平凡;</li>
+<li>从物理学的角度来看, 它与基态 (也包括激发态) 的纠缠和关联刻画 (比如面积定律) 息息相关, 并在此基础上提供了一系列全新的数值算法 (因而和数值模拟相关).</li>
+</ul>
+<p>哈密顿量复杂性可以称为“量子计算”在观念上的一次革新, 在此之前大家对量子计算的理解限于量子算法 (如 Shor 算法) 和复杂性 (如对量子 Turing 机的正确刻画和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">P</span></span></span></span></span>), 在此之后则开始将理论计算机科学的思想和工具引入了理论物理 (主要是凝聚态物理).</p>
+<a id="more"></a>
+<p>便宜起见, 下面的叙述假设读者知道本科层次计算理论中涉及的一些概念.</p>
+<h2 id="计算基态能量-lhp-qma-二分定理"><a class="markdownIt-Anchor" href="#计算基态能量-lhp-qma-二分定理"></a> 计算基态能量: LHP, QMA, 二分定理</h2>
+<p>“哈密顿量复杂性“这个名词提出的其实很晚 (2010, 见 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>), 而 Alexei Kitaev 在 1999 年将 Cook-Levin 定理 (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base"><span class="mord">3</span></span></span></span>-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">T</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{SAT}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">A</span><span class="mord mathsf">T</span></span></span></span></span>是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-complete ) &quot;量子化&quot;的成功尝试 <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> 之后, 这个领域客观上就已经存在——Kitaev 定义了复杂性类 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQNP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span> ( <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">A</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{QMA}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">Q</span><span class="mord mathsf">M</span><span class="mord mathsf">A</span></span></span></span></span> ) 和局部哈密顿量问题 (local Hamiltonian problem), 并且证明了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base"><span class="mord">5</span></span></span></span>-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">L</mi><mi mathvariant="sans-serif">H</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{LHP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">L</span><span class="mord mathsf">H</span><span class="mord mathsf">P</span></span></span></span></span>是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">A</mi></mrow><mo>−</mo><mi>c</mi><mi>o</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>e</mi><mi>t</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">\mathsf{QMA}-complete</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">Q</span><span class="mord mathsf">M</span><span class="mord mathsf">A</span></span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit">m</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">e</span><span class="mord mathit">t</span><span class="mord mathit">e</span></span></span></span>. 这样的成功尝试并不平凡, 其一是因为对于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">L</mi><mi mathvariant="sans-serif">H</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{LHP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">L</span><span class="mord mathsf">H</span><span class="mord mathsf">P</span></span></span></span></span>, 时间演化的局部约束并不能直接导出全局约束 (多个量子态可以对应于相同的约化密度矩阵); 其二则是 soundness (NO instance 被接受的概率) 的证明需要引入随机行走 (random walk). 而这个结果本身也并不平凡——<em>计算局部哈密顿量的局部可观测量的期望值, 在一般情况下即使对量子计算机都是困难的</em>.</p>
+<p>局部哈密顿量问题 ( <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">L</mi><mi mathvariant="sans-serif">H</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{LHP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">L</span><span class="mord mathsf">H</span><span class="mord mathsf">P</span></span></span></span></span> ) 说的是如何计算基态能量 (或者说是任何局部可观测量的期望值), 对应于经典情形下的约束可满足性问题 ( <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{CSP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">S</span><span class="mord mathsf">P</span></span></span></span></span> )的优化版本 (有多少约束未被满足?). 而<em>计算基态能量 (以及基态本身) 是凝聚态物理的数值模拟中的基本问题之一, 所以讨论模拟量子系统的困难程度是哈密顿量复杂性中的一部分</em>. 在此之后, 很多特定类型的 LHP 所属的复杂性类被讨论, 这里不再赘述, 见 <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>. 类似 CSP, 一个自然的想法是能否建立关于 LHP 的二分定理 (dichotomy theorem), 即用某些参数对具体 LHP 所属的复杂性层次进行分类. Cubitt 和 Montanaro 在 2013 年给出了关于量子比特(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">d=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">d</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">2</span></span></span></span>)的哈密顿量的 LHP 的二分定理, 它们可能属于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">P</span></span></span></span></span> , <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-complete, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">A</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{QMA}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">Q</span><span class="mord mathsf">M</span><span class="mord mathsf">A</span></span></span></span></span>-complete 或 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">I</mi><mi mathvariant="sans-serif">s</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">g</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{Ising}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">I</span><span class="mord mathsf">s</span><span class="mord mathsf">i</span><span class="mord mathsf">n</span><span class="mord mathsf" style="margin-right:0.01389em;">g</span></span></span></span></span>-complete.</p>
+<h2 id="计算基态-面积定律-张量网络-随机行走概率方法"><a class="markdownIt-Anchor" href="#计算基态-面积定律-张量网络-随机行走概率方法"></a> 计算基态: 面积定律, 张量网络, 随机行走/概率方法</h2>
+<p>除了基态能量, 如何计算基态也是凝聚态物理中的常见问题之一. 基于 DMRG 的一系列数值算法 (包括后来的张量网络相关算法) 对于一维有谱隙系统非常成功, 但是很长一段时间内没有严格解释. 那么从计算复杂性的角度来看, 很自然的想到两个问题:</p>
+<ul>
+<li>这样的物理系统的基态能否被有效地描述 (即参数规模为多项式)?</li>
+<li>它们对应的局部哈密顿量问题是否在计算相对容易 (比如在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span> 或 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">P</span></span></span></span></span> 中)?</li>
+</ul>
+<p>第一个问题涉及<em>面积定律(猜想)</em>, 即有谱隙系统的纠缠与边界(“面积”)而不是整个系统(“体积”)有关. 基于张量网络方法的一系列构造性证明给出了一部分答案: 如一维面积定律的组合证明 <sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1:1]</a></sup>, 即从乘积态出发用某些算符来制造纠缠, 并同时限制纠缠程度, 使得得到<em>基态满足谱隙和纠缠熵下界</em>; 以及一维有谱隙的局部哈密顿量问题在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">P</span></span></span></span></span> 中<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>, 这里用到了矩阵乘积态 (matrix product state), 这也给出了第二个问题的部分答案. 而二维面积定律以及相关的计算复杂性结果 (如对应的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">L</mi><mi mathvariant="sans-serif">H</mi><mi mathvariant="sans-serif">P</mi></mrow><mo>∈</mo><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{LHP} \in \mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.73354em;vertical-align:-0.0391em;"></span><span class="base"><span class="mord"><span class="mord mathsf">L</span><span class="mord mathsf">H</span><span class="mord mathsf">P</span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>) 至今仍是公开问题, 它的困难之处在于, 我们不知道如何证明这样的基态的有效表示和投影纠缠对态 (projected entangled-pair states)相关; 而即使这样的有效表示得以证明, 在计算局部可观测量期望值的过程中, 张量网络的有效收缩仍然需要依赖系统的非平凡性质 (一般情形下收缩 PEPS 是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-hard).</p>
+<p>而对于无谱隙系统, 比如基态简并情形, 在一维情形下可以证明它们<em>符合对数修正后的面积定律</em><sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>; 并提出了<em>类似重整化群的具有递归结构的算法</em>, 对于部分临界系统的数值模拟结果远好于 DMRG<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>, 后者是 2017 年 APS March meeting 的 talk. 除此之外, Peter Shor 等人利用 Markov 链和随机行走等组合/概率方法(计算谱隙和纠缠熵下界), 构造了spin-1的无谱隙的无阻挫(frustration-free)系统基态<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>, 这意味着无阻挫系统的基态也可能有非平凡的纠缠 (spin-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord">1</span><span class="mord">/</span><span class="mord">2</span></span></span></span> 的无阻挫系统基态为乘积态).</p>
+<p>关于无阻挫系统的另一个有趣结果, 是局部 Lovasz 引理 (local Lovasz lemma) 的量子对应所导出的基态计算算法<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>. 如果我们把局部哈密顿量问题改为判断系统是否无阻挫, 即基态能量是否为0, 这样的问题称为 quantum SAT. 而在经典情形下, 局部 Lovasz 引理的构造性证明给出了求解 SAT 问题的随机算法, 这也是经典结果&quot;量子化&quot;的为数不多的成功尝试之一.</p>
+<h2 id="基态能量能被很好地近似吗-量子-pcp-猜想"><a class="markdownIt-Anchor" href="#基态能量能被很好地近似吗-量子-pcp-猜想"></a> 基态能量能被很好地近似吗: 量子 PCP 猜想</h2>
+<p>PCP 定理, 即概率可检查证明 (probability checkable proof, 或局部可检查证明), 从交互式证明系统的角度重新刻画了 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>, 并在此基础上建立了和不可近似性之间的联系. 对于约束可满足问题, 比如说<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base"><span class="mord">3</span></span></span></span>-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">T</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{SAT}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">A</span><span class="mord mathsf">T</span></span></span></span></span>, 我们知道判定是不是所有的子句(clause)都是满足的是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-hard 的; 而 PCP 定理告诉我们, 判定所有子句都是满足的, 还是除了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1/100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord">1</span><span class="mord">/</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span>的子句都是满足的仍然是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-hard 的. 因而 PCP 定理一度成为证明不可近似性的标准方法, 那么 PCP 定理是否有量子对应呢?</p>
+<p>这是一个非常困难的问题, 并且和很多问题有深刻地联系, 限于笔者水平姑且写上一些. Matthew Hastings 提出了弱化版本, 即 NLTS 猜想 (No Low-energy Trivial State). NLTS 猜想说的是, 如果我们想寻找基态的近似的话 (即 low-energy state), 这些量子态都不能由常数深度 (const-depth) 的量子线路产生. 这和作为纠错编码 (error-correction code)的哈密顿量的基态相关, 因为这些纠错编码在出错情形下不能和基态偏离太多, 也就是说具有足够的鲁棒性 (robust entanglement). 这一猜想的弱化版本被 Eldar 和 Harrow 证明<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup>, 更多的介绍见 Thomas Vidick 的博客 (<a href="https://mycqstate.wordpress.com/2017/01/16/quid-qpcp/" target="_blank" rel="noopener">Quid qPCP?</a>).</p>
+<p>上面的介绍没有提及 Toby Cubitt 与可计算性相关的一些工作, 介绍见 Yupan Liu：Nature 和 Science 上有哪些非常有趣而又脑洞大开的文章？.</p>
+<p>总而言之, 哈密顿量复杂性讨论的是, 计算复杂性角度下的局部哈密顿量的基态(包括低能态)的一系列性质(比如能量), 包括它们所属的复杂性类层次(特定类型的局部哈密顿量具有非平凡的物理意义, 比如有谱隙系统, 无谱隙系统, 子项互相对易的哈密顿量), 以及能否被很好地近似(与量子纠缠, 拓扑序和纠错编码, 以及交互式证明系统和 quantum game 相关).</p>
+<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Aharonov D, Arad I, Landau Z, et al. Quantum Hamiltonian complexity and the detectability lemma[J]. arXiv preprint arXiv:1011.3445, 2010. <a href="#fnref1" class="footnote-backref">↩︎</a> <a href="#fnref1:1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Kitaev A. Quantum np[J]. Talk at AQIP, 1999, 99. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>Gharibian S, Huang Y, Landau Z, et al. Quantum hamiltonian complexity[J]. Foundations and Trends® in Theoretical Computer Science, 2015, 10(3): 159-282. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>Landau Z, Vazirani U, Vidick T. A polynomial time algorithm for the ground state of one-dimensional gapped local Hamiltonians[J]. Nature Physics, 2015, 11(7): 566-569. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>Arad I, Landau Z, Vazirani U, et al. Rigorous RG algorithms and area laws for low energy eigenstates in 1D[J]. Communications in Mathematical Physics, 2017, 356(1): 65-105. (ITCS 2017) <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>Roberts B, Vidick T, Motrunich O I. Rigorous renormalization group method for ground space and low-energy states of local Hamiltonians[J]. arXiv preprint arXiv:1703.01994, 2017. (APS March meeting 2017) <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>Movassagh R, Shor P W. Power law violation of the area law in quantum spin chains[J]. arXiv preprint arXiv:1408.1657, 2014. (QIP 2015) <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn8" class="footnote-item"><p>Gilyén A, Sattath O. On preparing ground states of gapped Hamiltonians: An efficient Quantum Lov’asz Local Lemma[J]. arXiv preprint arXiv:1611.08571, 2016. (FOCS 2017) <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn9" class="footnote-item"><p>Eldar L, Harrow A W. Local Hamiltonians Whose Ground States are Hard to Approximate[J]. arXiv preprint arXiv:1510.02082, 2015 (FOCS 2017) <a href="#fnref9" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+      
+    </div>
+
+    
+      
+      
+
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="http://climberpi.github.io">Climber.pI</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/">http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span>
+      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>
+    </p>
+  </div>
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/理论计算机科学/">理论计算机科学</a>
+            
+              <a href="/tags/量子计算理论/">量子计算理论</a>
+            
+              <a href="/tags/凝聚态物理/">凝聚态物理</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2018/03/19/HSP-LWE-lattice/">
+        <span class="next-text nav-default">从 Shor 算法到格密码学</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTE4NS8xMTcyMA">
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>  
+    
+  </div>
+
+
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:yupan.liu@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/climberpi" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+        
+          <a href="https://www.zhihu.com/people/climberpi" class="iconfont icon-zhihu" title="zhihu"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2018
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Climber.pI</span>
+  </span>
+</div>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+  
+
+  
+   <script type="text/javascript">
+	(function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+
+
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
+<link rel="stylesheet" href="/js/src/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+  </body>
+</html>
