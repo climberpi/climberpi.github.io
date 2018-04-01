@@ -231,18 +231,69 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/2018/03/25/intro-hamiltonion-complexity/">量子哈密顿量复杂性浅说</a>
+          <a class="post-link" href="/2018/04/01/permanent-boson-sampling/">积和式, 玻色采样和计数复杂性类</a>
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2018-03-25
+          2018-04-01
         </span>
         
         
         <div class="post-visits"
-             data-url="/2018/03/25/intro-hamiltonion-complexity/"
+             data-url="/2018/04/01/permanent-boson-sampling/"
+             data-title="积和式, 玻色采样和计数复杂性类">
+            Views
+          </div>
+        
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>这篇会讲一讲积和式 (Permanent) 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-completeness, 以及玻色采样 (Boson Sampling) 之间的联系.</p>
+<p>用以展示量子计算优越性 (quantum conputational supremacy)<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 的候选问题有很多, 不过玻色采样 (Boson sampling) 很可能是知名度最高的问题之一. 这一问题的美妙之处在于, 它联系了线性光学和积和式 (permanent), 因为光子 (photon) 在不同的模数 (mode) 上的概率分布, 可以对应到某个积和式上; 而积和式在计算复杂性理论中具有独特的地位, 原因之一是它提供了第一个非平凡的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-complete 问题. 有趣的是, 基于线性光学的技术给出了新的规约手段, 因而一并导出了一些特定类型的矩阵, 即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>L</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">GL(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">G</span><span class="mord mathit">L</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>U</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">U(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.10903em;">U</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>p</mi><mo>(</mo><mn>2</mn><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Sp(2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span> 对应的积和式求职也是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-complete 的<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
+          <div class="read-more">
+            <a href="/2018/04/01/permanent-boson-sampling/" class="read-more-link">Read more..</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/2018/04/01/intro-hamiltonion-complexity/">量子哈密顿量复杂性浅说</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-04-01
+        </span>
+        
+        
+        <div class="post-visits"
+             data-url="/2018/04/01/intro-hamiltonion-complexity/"
              data-title="量子哈密顿量复杂性浅说">
             Views
           </div>
@@ -264,11 +315,11 @@
           <p>简单地说, 哈密顿量复杂性是从计算复杂性理论的角度来理解局部哈密顿量 (local Hamiltonian) 和基态 (包括基态本身和基态能量):</p>
 <ul>
 <li>从计算机科学的角度来看, 这是对约束可满足性问题 (constraint satisfaction problem, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{CSP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">S</span><span class="mord mathsf">P</span></span></span></span></span>) 的进一步推广, 而与之相关的一系列结果 (包括 PCP 定理) 在量子情形下的对应并不平凡;</li>
-<li>从物理学的角度来看, 它与基态 (也包括激发态) 的纠缠和关联刻画 (比如面积定律) 息息相关, 并在此基础上提供了一系列全新的数值算法 (因而和数值模拟相关).</li>
+<li>从物理学的角度来看, 它与基态 (也包括激发态) 的纠缠和关联刻画 (比如面积定律) 息息相关, 并在此基础上提供了一系列全新的数值算法 (因而亦与数值模拟相关).</li>
 </ul>
-<p>哈密顿量复杂性可以称为“量子计算”在观念上的一次革新, 在此之前大家对量子计算的理解限于量子算法 (如 Shor 算法) 和复杂性 (如对量子 Turing 机的正确刻画和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">P</span></span></span></span></span>), 在此之后则开始将理论计算机科学的思想和工具引入了理论物理 (主要是凝聚态物理).</p>
+<p>哈密顿量复杂性可以称为“量子计算”在观念上的一次革新, 在此之前大家对量子计算的理解限于量子算法 (如 Shor 算法) 和计算复杂性 (如对量子 Turing 机的正确刻画, 以及刻画量子计算机计算能力的复杂性类 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">P</span></span></span></span></span>), 在此之后, 则开始<em>将理论计算机科学的思想和工具引入了理论物理 (主要是凝聚态物理)</em>, 并出现了一系列令人惊讶的结果.</p>
           <div class="read-more">
-            <a href="/2018/03/25/intro-hamiltonion-complexity/" class="read-more-link">Read more..</a>
+            <a href="/2018/04/01/intro-hamiltonion-complexity/" class="read-more-link">Read more..</a>
           </div>
         
       
@@ -294,6 +345,16 @@
         <span class="post-time">
           2018-03-19
         </span>
+        
+          <div class="post-category">
+            
+              <a href="/categories/理论计算机科学/">理论计算机科学</a>
+            
+              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
+            
+              <a href="/categories/理论计算机科学/量子计算理论/密码学/">密码学</a>
+            
+          </div>
         
         
         <div class="post-visits"
@@ -409,7 +470,7 @@
     
     &copy; 
      
-      2015 - 
+      2016 - 
     
     2018
 
