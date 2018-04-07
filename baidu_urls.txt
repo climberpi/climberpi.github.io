@@ -1,0 +1,3 @@
+http://climberpi.github.io/2018/04/01/permanent-boson-sampling/
+http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/
+http://climberpi.github.io/2018/03/19/HSP-LWE-lattice/
