@@ -17,8 +17,12 @@
 
 
 
+  <meta name="description" content="说点 Unique Games Conjecture"/>
 
 
+
+
+  <meta name="keywords" content="理论计算机科学, Complexity Meets Quantum" />
 
 
 
@@ -38,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://climberpi.github.io/"/>
+<link rel="canonical" href="http://climberpi.github.io/2018/04/19/ugc/"/>
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
@@ -95,7 +99,7 @@
 
 
 
-    <title> Complexity Meets Quantum </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <title> 说点 Unique Games Conjecture - Complexity Meets Quantum </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -224,14 +228,12 @@
         <div class="content-wrapper">
           <div id="content" class="content">
             
-  <section id="posts" class="posts">
-    
-      
+  
   <article class="post">
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/2018/04/19/ugc/">说点 Unique Games Conjecture</a>
+          说点 Unique Games Conjecture
         
       </h1>
 
@@ -258,14 +260,17 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#pcp-定理-ugc-和不可近似性"><span class="toc-text"> PCP 定理, UGC 和不可近似性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-ugc-and-d-to-1-games"><span class="toc-text"> 什么是 UGC and d-to-1 games</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#证明或证伪-ugc-的进展"><span class="toc-text"> 证明或证伪 UGC 的进展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-text"> 参考文献</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        
-        
-
-        
-          <p>前几天正好听了一次 Irit Dinur 的 seminar, 试着写点 UGC 相关的东西. 下面主要介绍 UGC 的来源 ( <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-hardness 和 PCP 定理), 以及和 UGC 直接相关的进展.</p>
+        <p>前几天正好听了一次 Irit Dinur 的 seminar, 试着写点 UGC 相关的东西. 下面主要介绍 UGC 的来源 ( <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-hardness 和 PCP 定理), 以及和 UGC 直接相关的进展.</p>
 <h2 id="pcp-定理-ugc-和不可近似性"><a class="markdownIt-Anchor" href="#pcp-定理-ugc-和不可近似性"></a> PCP 定理, UGC 和不可近似性</h2>
 <p>故事应该从 PCP 定理之后讲起. 上世纪九十年代初证明的 PCP 定理刻画了不可近似性 (hardness of approximation), 准确地说是证明某些问题的近似算法能做到某个近似比是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow><mtext>-hard</mtext></mrow><annotation encoding="application/x-tex">\mathsf{NP}\text{-hard}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span><span class="mord text"><span class="mord">-hard</span></span></span></span></span> 的. 比如说 Johan Håstad 在 1996 年给出的一系列结果<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 中 3-LIN:</p>
 <blockquote>
@@ -356,212 +361,73 @@
 </ol>
 </section>
 
-        
       
     </div>
 
     
-
-    
-
-  </article>
-
-    
       
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/04/01/permanent-boson-sampling/">积和式, 玻色采样和计数复杂性</a>
-        
-      </h1>
+      
 
-      <div class="post-meta">
-        <span class="post-time">
-          2018-04-01
-        </span>
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="http://climberpi.github.io">Climber.pI</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="http://climberpi.github.io/2018/04/19/ugc/">http://climberpi.github.io/2018/04/19/ugc/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span>
+      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>
+    </p>
+  </div>
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
         
-          <div class="post-category">
+          <div class="post-tags">
             
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
+              <a href="/tags/理论计算机科学/">理论计算机科学</a>
             
           </div>
         
         
-        <div class="post-visits"
-             data-url="/2018/04/01/permanent-boson-sampling/"
-             data-title="积和式, 玻色采样和计数复杂性">
-            Views
-          </div>
         
-      </div>
-    </header>
-
+  <nav class="post-nav">
     
     
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>这篇会讲一讲积和式 (Permanent) 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-completeness, 以及玻色采样 (Boson Sampling) 之间的联系.</p>
-<p>用以展示量子计算优越性 (quantum conputational supremacy)<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 的候选问题有很多, 不过玻色采样 (Boson sampling) 很可能是知名度最高的问题之一. 这一问题的美妙之处在于, 它联系了线性光学和积和式 (permanent), 因为光子 (photon) 在不同的模数 (mode) 上的概率分布, 可以对应到某个积和式上; 而积和式在计算复杂性理论中具有独特的地位, 原因之一是它提供了第一个非平凡的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-complete 问题. 有趣的是, 基于线性光学的技术给出了新的规约手段, 因而一并导出了一些特定类型的矩阵, 即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>L</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">GL(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">G</span><span class="mord mathit">L</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>U</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">U(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.10903em;">U</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>p</mi><mo>(</mo><mn>2</mn><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Sp(2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span> 对应的积和式求值也是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-complete 的<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
-          <div class="read-more">
-            <a href="/2018/04/01/permanent-boson-sampling/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/03/25/intro-hamiltonion-complexity/">量子哈密顿量复杂性浅说</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-03-25
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/凝聚态物理/">凝聚态物理</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/03/25/intro-hamiltonion-complexity/"
-             data-title="量子哈密顿量复杂性浅说">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>简单地说, 哈密顿量复杂性是从计算复杂性理论的角度来理解局部哈密顿量 (local Hamiltonian) 和基态 (包括基态本身和基态能量):</p>
-<ul>
-<li>从计算机科学的角度来看, 这是对约束可满足性问题 (constraint satisfaction problem, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{CSP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">S</span><span class="mord mathsf">P</span></span></span></span></span>) 的进一步推广, 而与之相关的一系列结果 (包括 PCP 定理) 在量子情形下的对应并不平凡;</li>
-<li>从物理学的角度来看, 它与基态 (也包括激发态) 的纠缠和关联刻画 (比如面积定律) 息息相关, 并在此基础上提供了一系列全新的数值算法 (因而亦与数值模拟相关).</li>
-</ul>
-<p>哈密顿量复杂性可以称为“量子计算”在观念上的一次革新, 在此之前大家对量子计算的理解限于量子算法 (如 Shor 算法) 和计算复杂性 (如对量子 Turing 机的正确刻画, 以及刻画量子计算机计算能力的复杂性类 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">P</span></span></span></span></span>), 在此之后, 则开始<em>将理论计算机科学的思想和工具引入了理论物理 (主要是凝聚态物理)</em>, 并出现了一系列令人惊讶的结果.</p>
-          <div class="read-more">
-            <a href="/2018/03/25/intro-hamiltonion-complexity/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/03/19/HSP-LWE-lattice/">从 Shor 算法到格密码学</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-03-19
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/密码学/">密码学</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/03/19/HSP-LWE-lattice/"
-             data-title="从 Shor 算法到格密码学">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>本文主要参考 Umesh Vazirani 在 Simons Institute 的 talk: <a href="https://www.youtube.com/watch?v=vHIK4AR_fVw" target="_blank" rel="noopener">Quantum and Post-Quantum Cryptography</a> , 说的是关于从一类非交换隐含子群问题到格密码(LWE)的简短历史, 稍微补充了一些细节. 值得一提的是, Oded Regev 关于使用 Learning with Errors (LWE) 作为困难假设的 Lattice-based cryptography 的工作<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>, 荣膺 <a href="http://eatcs.org/index.php/component/content/article/1-news/2670-2018-godel-prize" target="_blank" rel="noopener">2018 年 Gödel Prize</a>.</p>
-          <div class="read-more">
-            <a href="/2018/03/19/HSP-LWE-lattice/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    
+      <a class="next" href="/2018/04/01/permanent-boson-sampling/">
+        <span class="next-text nav-default">积和式, 玻色采样和计数复杂性</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
+
+  </article>
+
 
           </div>
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTE4NS8xMTcyMA">
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>  
+    
+  </div>
+
 
         </div>
       </main>
@@ -648,6 +514,25 @@
     </div>
 
     
+  
+  
+
+  
+   <script type="text/javascript">
+	(function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+
+
 
 
     
