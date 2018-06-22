@@ -1,3 +1,4 @@
+http://climberpi.github.io/2018/06/22/game-qpcp-interactive-proofs/
 http://climberpi.github.io/2018/04/19/ugc/
 http://climberpi.github.io/2018/04/01/permanent-boson-sampling/
 http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/
