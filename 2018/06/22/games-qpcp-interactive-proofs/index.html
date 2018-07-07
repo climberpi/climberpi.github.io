@@ -17,7 +17,7 @@
 
 
 
-  <meta name="description" content="本文关于量子 PCP 猜想的系列介绍的第一篇, 关于经典和量子交互式证明. 第一部分包括从 NP 开始给出交互式证明的一系列结果, 包括多轮交互式证明, 多个证明者的多伦交互式证明, 以及导出的一系列概率可检测证明 (PCP), 但是不会涉及任何密码学相关的结果. 之后, 解释 PCP 定理中概率可检查证明 (或者说局部可检测证明) 的意义, 以及 PCP 定理的其他表述形式 (与不可近似性的联系. 第二部分包括定义 NP 的量子对应 QMA 及其完全问题, 在此基础上给出量子交互式证明系统相关的复杂性类的一系列定义 (一个证明者是 QIP 和多个证明者是 MIP∗), 以及交互式证明版本的量子 PCP 猜想的定义. 最后介绍近年关于量子 PCP 猜想的几个弱化版本 (即 MIP∗ 的下界) 的结果, 并简要提及与 MIP∗ 的可能上界有关的结果."/>
+  <meta name="description" content="本文量子 PCP 猜想的系列介绍的第一篇, 关于经典和量子交互式证明. 第一部分包括从 NP 开始给出交互式证明的一系列结果, 包括多轮交互式证明, 多个证明者的多伦交互式证明, 以及导出的一系列概率可检测证明 (PCP), 但是不会涉及任何密码学相关的结果. 之后, 解释 PCP 定理中概率可检查证明 (或者说局部可检测证明) 的意义, 以及 PCP 定理的其他表述形式 (与不可近似性的联系. 第二部分包括定义 NP 的量子对应 QMA 及其完全问题, 在此基础上给出量子交互式证明系统相关的复杂性类的一系列定义 (一个证明者是 QIP 和多个证明者是 MIP∗), 以及交互式证明版本的量子 PCP 猜想的定义. 最后介绍近年关于量子 PCP 猜想的几个弱化版本 (即 MIP∗ 的下界) 的结果, 并简要提及与 MIP∗ 的可能上界有关的结果."/>
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://climberpi.github.io/2018/06/22/game-qpcp-interactive-proofs/"/>
+<link rel="canonical" href="http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/"/>
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
@@ -252,7 +252,7 @@
         
         
         <div class="post-visits"
-             data-url="/2018/06/22/game-qpcp-interactive-proofs/"
+             data-url="/2018/06/22/games-qpcp-interactive-proofs/"
              data-title="量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠">
             Views
           </div>
@@ -273,12 +273,13 @@
     <div class="post-content">
       
         <p>准备写一个系列, 介绍一下量子 PCP 猜想<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>以及今年被 Natarajan-Vidick 证明的 entangled game 版本<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>. 之所以我仍然称之为<strong>猜想</strong>, 是因为 Hamiltonian qPCP 仍然是<strong>公开问题</strong>, 并且 game qPCP 和 Hamiltonian qPCP 之间的联系仍然不完全清楚.</p>
-<p>写这个系列的起因是准备这学期某门课的 presentation, 主要参考 Thomas Vidick 在今年 UCSD 的 Spring School on Quantum Computation 上的 Lecture Notes<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>, Anand Natarajan 几天前<a href="https://simons.berkeley.edu/talks/anand-natarajan-06-15-18" target="_blank" rel="noopener">在 Simons Institute 的报告</a>, 以及相关的论文 (主要是<sup class="footnote-ref"><a href="#fn2" id="fnref2:1">[2:1]</a></sup>  和 <sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup> 以及 <sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>). 大致分为四篇:</p>
+<p>写这个系列的起因是准备这学期某门课的 presentation, 主要参考 Thomas Vidick 在今年 UCSD 的 Spring School on Quantum Computation 上的 Lecture Notes<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>, Anand Natarajan 几天前<a href="https://simons.berkeley.edu/talks/anand-natarajan-06-15-18" target="_blank" rel="noopener">在 Simons Institute 的报告</a>, 以及相关的论文 (主要是<sup class="footnote-ref"><a href="#fn2" id="fnref2:1">[2:1]</a></sup>  和 <sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup> 以及 <sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>). 大致分为五篇:</p>
 <ul>
 <li>第一篇介绍交互式证明系统的一系列结果, 以及当我们把量子纠缠引入交互式证明系统会发生什么.</li>
 <li>第二篇介绍 entangled game (以 CHSH game 和 Magic Square game 为例), 自检测 (self-testing), 以及它们和近似群表示 (即 Gowers-Hatami 定理<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>) 的联系.</li>
-<li>第三篇介绍线性检测和指数规模的 PCP 定理的证明, 以及如何得到线性检测的量子对应, 和如何使用纠错编码进一步改进极大纠缠态的自检测.</li>
-<li>第四篇介绍如何用前三篇的技术证明交互式证明版本的量子 PCP 定理 (games qPCP), 并简要介绍与 Hamiltonian qPCP 相关的内容与进展.</li>
+<li>第三篇介绍线性检测和指数规模的 PCP 定理的证明, 以及如何得到线性检测的量子对应.</li>
+<li>第四篇介绍如何用前三篇的技术证明 (指数规模的) 交互式证明版本的量子 PCP 定理 (games qPCP), 并简要介绍与 Hamiltonian qPCP 相关的内容与进展.</li>
+<li>第五篇介绍如何使用纠错编码进一步改进极大纠缠态的自检测, 并如何用 sum-check 和 PCP of Proximity 得到准多项式和多项式规模的量子 PCP 定理.</li>
 </ul>
 <p>为了笔者的方便起见, 假定读者们知道一点量子信息 (Dirac 记号 / CHSH game / <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">P</span></span></span></span></span>), 以及本科程度的计算复杂性理论 (知道 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span> 的两种等价定义, 能说清楚 Cook-Levin 定理的内容, 并且能大致理解证明).</p>
 <p>本篇的主要内容如下:</p>
@@ -432,7 +433,7 @@
     </p>
     <p class="copyright-item">
       <span>Link: </span>
-      <a href="http://climberpi.github.io/2018/06/22/game-qpcp-interactive-proofs/">http://climberpi.github.io/2018/06/22/game-qpcp-interactive-proofs/</a>
+      <a href="http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/">http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/</a>
     </p>
     <p class="copyright-item">
       <span>License: </span>
@@ -462,9 +463,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/2018/06/27/game-qpcp-self-testing/">
+      <a class="prev" href="/2018/06/27/games-qpcp-self-testing/">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">量子 PCP 猜想浅说 (二): 量子态自检测和近似群表示</span>
+        <span class="prev-text nav-default">量子 PCP 猜想浅说 (二): 用交互式证明验证量子纠缠</span>
         <span class="prev-text nav-mobile">Prev</span>
       </a>
     

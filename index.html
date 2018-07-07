@@ -231,7 +231,65 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/2018/06/27/game-qpcp-self-testing/">量子 PCP 猜想浅说 (二): 量子态自检测和近似群表示</a>
+          <a class="post-link" href="/2018/07/07/games-qpcp-linearity-test/">量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-07-07
+        </span>
+        
+          <div class="post-category">
+            
+              <a href="/categories/理论计算机科学/">理论计算机科学</a>
+            
+              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
+            
+          </div>
+        
+        
+        <div class="post-visits"
+             data-url="/2018/07/07/games-qpcp-linearity-test/"
+             data-title="量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测">
+            Views
+          </div>
+        
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>本文量子 PCP 猜想的系列介绍的第三篇. 这一篇会给出经典 PCP 定理的一些直觉, 即指数规模的 PCP 定理 -- 也就是说我们有一个指数规模的"证明", 只通过检查常数行, 我们就能以极高的概率判断这一"证明"是否正确. 为了更高效地阅读证明, 我们需要对其编码得到"新证明", 于是要检查"新证明"是否正确编码, 以及编码前的"证明"是否是真的. 在指数规模 PCP 定理中, 我们可以用线性检测来检查编码的正确性, 这也是性质检测的早期结果之一. 那么为什么线性检测是对的呢, 或者说如何证明其可靠性? 通常可以用 Fourier 分析的简单性质可以证明, 不过我们会从群表示论 (特征标理论) 的角度来看待这一证明, 并设法联系 Gowers-Hatami 定理 -- 因而线性检测可以被推广到矩阵值函数上, 进而证明推广后的 Pauli 矩阵的量子线性检测的可靠性. 这也是交互式证明版本的量子 PCP 定理的证明中用到的关键技术之一.</p>
+          <div class="read-more">
+            <a href="/2018/07/07/games-qpcp-linearity-test/" class="read-more-link">Read more..</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/2018/06/27/games-qpcp-self-testing/">量子 PCP 猜想浅说 (二): 用交互式证明验证量子纠缠</a>
         
       </h1>
 
@@ -250,8 +308,8 @@
         
         
         <div class="post-visits"
-             data-url="/2018/06/27/game-qpcp-self-testing/"
-             data-title="量子 PCP 猜想浅说 (二): 量子态自检测和近似群表示">
+             data-url="/2018/06/27/games-qpcp-self-testing/"
+             data-title="量子 PCP 猜想浅说 (二): 用交互式证明验证量子纠缠">
             Views
           </div>
         
@@ -269,9 +327,9 @@
         
 
         
-          <p>本文关于量子 PCP 猜想的系列介绍的第二篇. 由于在量子交互式证明中, 证明者(玩家)和验证者(裁判)使用量子态通信并不会带来任何计算能力的提升, 我们只考虑证明者之间共享纠缠态的情形. 这一篇会从不同的角度介绍 entangled games. 其一是从字面椅子考虑, 说明什么是量子策略, 如何定义获胜概率, 以及量子测量会对获胜概率带来哪些优势. 其二则是从证明者们共享的纠缠态的视角, 介绍量子态的自检测 (self-testing), 即如果玩家们的获胜概率是几乎最优的话, 那么他们共享的量子态几乎是极大纠缠态. 有趣的是, 后者有非常漂亮的群(近似)表示论解释, 极大纠缠态的自检测实际上给出了关于 Pauli 矩阵非对易性的性质检测! 这一联系也是 games qPCP theorem 证明中的关键技术之一.</p>
+          <p>本文量子 PCP 猜想的系列介绍的第二篇. 由于在量子交互式证明中, 证明者(玩家)和验证者(裁判)使用量子态通信并不会带来任何计算能力的提升, 我们只考虑证明者之间共享纠缠态的情形. 这一篇会从不同的角度介绍 entangled games. 其一是从字面椅子考虑, 说明什么是量子策略, 如何定义获胜概率, 以及量子测量会对获胜概率带来哪些优势. 其二则是从证明者们共享的纠缠态的视角, 介绍量子态的自检测 (self-testing), 即如果玩家们的获胜概率是几乎最优的话, 那么他们共享的量子态几乎是极大纠缠态. 有趣的是, 后者有非常漂亮的群(近似)表示论解释, 极大纠缠态的自检测实际上给出了关于 Pauli 矩阵非对易性的性质检测! 这一联系也是 games qPCP theorem 证明中的关键技术之一.</p>
           <div class="read-more">
-            <a href="/2018/06/27/game-qpcp-self-testing/" class="read-more-link">Read more..</a>
+            <a href="/2018/06/27/games-qpcp-self-testing/" class="read-more-link">Read more..</a>
           </div>
         
       
@@ -289,7 +347,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/2018/06/22/game-qpcp-interactive-proofs/">量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</a>
+          <a class="post-link" href="/2018/06/22/games-qpcp-interactive-proofs/">量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</a>
         
       </h1>
 
@@ -308,7 +366,7 @@
         
         
         <div class="post-visits"
-             data-url="/2018/06/22/game-qpcp-interactive-proofs/"
+             data-url="/2018/06/22/games-qpcp-interactive-proofs/"
              data-title="量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠">
             Views
           </div>
@@ -327,9 +385,9 @@
         
 
         
-          <p>本文关于量子 PCP 猜想的系列介绍的第一篇, 关于经典和量子交互式证明. 第一部分包括从 NP 开始给出交互式证明的一系列结果, 包括多轮交互式证明, 多个证明者的多伦交互式证明, 以及导出的一系列概率可检测证明 (PCP), 但是不会涉及任何密码学相关的结果. 之后, 解释 PCP 定理中概率可检查证明 (或者说局部可检测证明) 的意义, 以及 PCP 定理的其他表述形式 (与不可近似性的联系. 第二部分包括定义 NP 的量子对应 QMA 及其完全问题, 在此基础上给出量子交互式证明系统相关的复杂性类的一系列定义 (一个证明者是 QIP 和多个证明者是 MIP∗), 以及交互式证明版本的量子 PCP 猜想的定义. 最后介绍近年关于量子 PCP 猜想的几个弱化版本 (即 MIP∗ 的下界) 的结果, 并简要提及与 MIP∗ 的可能上界有关的结果.</p>
+          <p>本文量子 PCP 猜想的系列介绍的第一篇, 关于经典和量子交互式证明. 第一部分包括从 NP 开始给出交互式证明的一系列结果, 包括多轮交互式证明, 多个证明者的多伦交互式证明, 以及导出的一系列概率可检测证明 (PCP), 但是不会涉及任何密码学相关的结果. 之后, 解释 PCP 定理中概率可检查证明 (或者说局部可检测证明) 的意义, 以及 PCP 定理的其他表述形式 (与不可近似性的联系. 第二部分包括定义 NP 的量子对应 QMA 及其完全问题, 在此基础上给出量子交互式证明系统相关的复杂性类的一系列定义 (一个证明者是 QIP 和多个证明者是 MIP∗), 以及交互式证明版本的量子 PCP 猜想的定义. 最后介绍近年关于量子 PCP 猜想的几个弱化版本 (即 MIP∗ 的下界) 的结果, 并简要提及与 MIP∗ 的可能上界有关的结果.</p>
           <div class="read-more">
-            <a href="/2018/06/22/game-qpcp-interactive-proofs/" class="read-more-link">Read more..</a>
+            <a href="/2018/06/22/games-qpcp-interactive-proofs/" class="read-more-link">Read more..</a>
           </div>
         
       
