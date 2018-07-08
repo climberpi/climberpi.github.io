@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
+    <lastmod>2018-07-08T08:08:23.061Z</lastmod>
+    <data>
+        <display>
+        <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
+        <pubTime>2018-07-07T09:23:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
+    <lastmod>2018-07-07T20:07:42.422Z</lastmod>
+    <data>
+        <display>
+        <title>量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证</title>
+        <pubTime>2018-06-27T09:44:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2018/07/07/quantum-cook-levin/</loc>
     <lastmod>2018-07-07T13:48:26.443Z</lastmod>
     <data>
@@ -35,56 +85,6 @@
         <display>
         <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
         <pubTime>2018-06-22T17:11:56.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
-    <lastmod>2018-07-07T09:27:32.353Z</lastmod>
-    <data>
-        <display>
-        <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
-        <pubTime>2018-07-07T09:23:02.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
-    <lastmod>2018-07-07T09:11:16.585Z</lastmod>
-    <data>
-        <display>
-        <title>量子 PCP 猜想浅说 (二): 用交互式证明验证量子纠缠</title>
-        <pubTime>2018-06-27T09:44:02.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -185,7 +185,7 @@
     <data>
         <display>
         <title>量子哈密顿量复杂性浅说</title>
-        <pubTime>2018-03-25T14:23:34.000Z</pubTime>
+        <pubTime>2018-03-25T13:23:34.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
