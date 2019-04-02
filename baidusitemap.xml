@@ -4,12 +4,37 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2019/04/02/supremacy-shadow-circuit/</loc>
+    <lastmod>2019-04-02T20:55:13.643Z</lastmod>
+    <data>
+        <display>
+        <title>量子优越性和浅层量子线路</title>
+        <pubTime>2019-04-02T20:50:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2018/10/07/games-qpcp-qma-hard/</loc>
     <lastmod>2018-10-07T08:08:44.311Z</lastmod>
     <data>
         <display>
         <title>量子 PCP 猜想浅说 (四): 量子 PCP 定理及其他</title>
-        <pubTime>2018-10-07T07:34:45.000Z</pubTime>
+        <pubTime>2018-10-07T12:34:45.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -34,7 +59,7 @@
     <data>
         <display>
         <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
-        <pubTime>2018-07-07T04:23:02.000Z</pubTime>
+        <pubTime>2018-07-07T09:23:02.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -59,7 +84,7 @@
     <data>
         <display>
         <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
-        <pubTime>2018-06-22T12:11:56.000Z</pubTime>
+        <pubTime>2018-06-22T17:11:56.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -84,7 +109,7 @@
     <data>
         <display>
         <title>量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证</title>
-        <pubTime>2018-06-27T04:44:02.000Z</pubTime>
+        <pubTime>2018-06-27T09:44:02.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -109,7 +134,7 @@
     <data>
         <display>
         <title>随机行走与 Cook-Levin 定理的“量子化”</title>
-        <pubTime>2018-07-07T08:43:34.000Z</pubTime>
+        <pubTime>2018-07-07T13:43:34.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -134,7 +159,7 @@
     <data>
         <display>
         <title>从 Shor 算法到格密码学</title>
-        <pubTime>2018-03-18T16:43:43.000Z</pubTime>
+        <pubTime>2018-03-18T22:43:43.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -164,7 +189,7 @@
     <data>
         <display>
         <title>说点 Unique Games Conjecture</title>
-        <pubTime>2018-04-19T12:31:34.000Z</pubTime>
+        <pubTime>2018-04-19T17:31:34.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -184,7 +209,7 @@
     <data>
         <display>
         <title>积和式, 玻色采样和计数复杂性</title>
-        <pubTime>2018-04-01T10:42:59.000Z</pubTime>
+        <pubTime>2018-04-01T15:42:59.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -210,7 +235,7 @@
     <data>
         <display>
         <title>量子哈密顿量复杂性浅说</title>
-        <pubTime>2018-03-25T08:23:34.000Z</pubTime>
+        <pubTime>2018-03-25T13:23:34.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
