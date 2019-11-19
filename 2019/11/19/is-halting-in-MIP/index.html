@@ -17,8 +17,12 @@
 
 
 
+  <meta name="description" content="量子交互式证明可以验证停机问题吗?"/>
 
 
+
+
+  <meta name="keywords" content="理论计算机科学, 量子计算理论, Complexity Meets Quantum" />
 
 
 
@@ -38,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://climberpi.github.io/"/>
+<link rel="canonical" href="http://climberpi.github.io/2019/11/19/is-halting-in-MIP/"/>
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
@@ -95,7 +99,7 @@
 
 
 
-    <title> Complexity Meets Quantum </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <title> 量子交互式证明可以验证停机问题吗? - Complexity Meets Quantum </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -224,14 +228,12 @@
         <div class="content-wrapper">
           <div id="content" class="content">
             
-  <section id="posts" class="posts">
-    
-      
+  
   <article class="post">
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/2019/11/19/is-halting-in-MIP/">量子交互式证明可以验证停机问题吗?</a>
+          量子交互式证明可以验证停机问题吗?
         
       </h1>
 
@@ -260,14 +262,17 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#从量子非局域性说起"><span class="toc-text"> 从量子非局域性说起</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不同模型上的量子交互式证明"><span class="toc-text"> 不同模型上的量子交互式证明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tsirelson-问题对计算复杂性理论意味着什么"><span class="toc-text"> Tsirelson 问题对计算复杂性理论意味着什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-text"> 参考文献</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        
-        
-
-        
-          <p>目前的答案是, 如果有一个<strong>非常精确的</strong>量子交互式证明的话, 那么我们可以用量子交互式证明来验证停机问题 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. 除此之外, 我们甚至还能找到一个具有完美零知识证明 (perfect zero-knowledge proof) 性质的量子交互式证明系统 <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
+        <p>目前的答案是, 如果有一个<strong>非常精确的</strong>量子交互式证明的话, 那么我们可以用量子交互式证明来验证停机问题 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. 除此之外, 我们甚至还能找到一个具有完美零知识证明 (perfect zero-knowledge proof) 性质的量子交互式证明系统 <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
 <p>那么如果用<strong>正常的</strong>量子交互式证明, 即要么玩家们一定获胜, 要么玩家们获胜概率小于 1/3), 它能够验证停机问题 (Halting) 吗?</p>
 <p>注意到停机问题是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">R</mi><mi mathvariant="sans-serif">E</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{RE}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">R</span><span class="mord mathsf">E</span></span></span></span></span>-complete 的 (recursively enumerable), 这意味我们需要证明 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">R</mi><mi mathvariant="sans-serif">E</mi></mrow><mo>⊆</mo><mrow><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">I</mi><msup><mi mathvariant="sans-serif">P</mi><mo>∗</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\mathsf{RE} \subseteq \mathsf{MIP^*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.83041em;vertical-align:-0.13597em;"></span><span class="base"><span class="mord"><span class="mord mathsf">R</span><span class="mord mathsf">E</span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊆</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord mathsf">M</span><span class="mord mathsf">I</span><span class="mord"><span class="mord mathsf">P</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span></span></span></span>. 然而这一结果会推翻算子代数中的 Connes’ embedding conjecture. 如果想知道更多细节的话, Thomas Vidick 写的[科普文] (<a href="https://www.ams.org/journals/notices/201910/rnoti-p1618.pdf" target="_blank" rel="noopener">https://www.ams.org/journals/notices/201910/rnoti-p1618.pdf</a>) 是个很好的介绍.</p>
 <p>在本文的剩余章节, 我会分别简单解释标题中的 “量子”, “交互式证明” 和 “验证” 是在说什么.</p>
@@ -360,621 +365,75 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
 </ol>
 </section>
 
-        
       
     </div>
 
     
-
-    
-
-  </article>
-
-    
       
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2019/04/02/supremacy-shadow-circuit/">量子优越性和浅层量子线路</a>
-        
-      </h1>
+      
 
-      <div class="post-meta">
-        <span class="post-time">
-          2019-04-02
-        </span>
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="http://climberpi.github.io">Climber.pI</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="http://climberpi.github.io/2019/11/19/is-halting-in-MIP/">http://climberpi.github.io/2019/11/19/is-halting-in-MIP/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span>
+      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>
+    </p>
+  </div>
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
         
-          <div class="post-category">
+          <div class="post-tags">
             
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
+              <a href="/tags/理论计算机科学/">理论计算机科学</a>
             
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
+              <a href="/tags/量子计算理论/">量子计算理论</a>
             
           </div>
         
         
-        <div class="post-visits"
-             data-url="/2019/04/02/supremacy-shadow-circuit/"
-             data-title="量子优越性和浅层量子线路">
-            Views
-          </div>
         
-      </div>
-    </header>
-
+  <nav class="post-nav">
     
     
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>这篇说的是一个关于线路复杂性的结果, 给出了一个问题使得, 量子计算机只需要常数深度量子线路, 而经典计算机至少需要对数深度经典线路. 前者的构造非常简单, 并且有很漂亮的解释 (制备 graph state 并按某种方式测量); 后者是与前者问题中的图相关的下界. 这里的量子优越性的来源是量子非局域性, 换而言之, 对于任何常数深度量子线路, 求解这一问题意味着对应的 GHZ game 的量子策略最大获胜概率为 1 (而经典策略的最大获胜概率则小于 1). </p>
-          <div class="read-more">
-            <a href="/2019/04/02/supremacy-shadow-circuit/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/10/07/games-qpcp-qma-hard/">量子 PCP 猜想浅说 (四): 量子 PCP 定理及其他</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-10-07
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/10/07/games-qpcp-qma-hard/"
-             data-title="量子 PCP 猜想浅说 (四): 量子 PCP 定理及其他">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>本文是量子 PCP 猜想的系列介绍的最后一篇. 这一篇会带领读者补全指数规模量子 PCP 定理的证明过程. 首先需要解决的问题是, 我们需要什么样的 QMA-complete 问题,  尽管自然的选择是局部哈密顿量问题, 但是借助纠错编码分发"证明"的过程会把我们限制在某些哈密顿量上. 其次, 我们需要的量子交互式证明协议的完备性-可靠性间隙是和输入规模无关的常数, 这意味着我们必须设法把局部哈密顿量问题的精度间隙从逆多项式放大到常数. 此外, 为了得到更高效的规约过程, 我们还需要借助经典 PCP 定理证明中的一系列技术, 比如低次多项式检测来设计更高效的 Pauli braiding testing. 看起来到了这里这系列文章已经尘埃落定了, 可为什么标题仍然是"猜想"而非"定理"呢? 这是因为我们对哈密顿量版本的量子 PCP 猜想 (或者说 robust entanglement) 知之甚少, 这一问题早已并不局限在量子计算复杂性理论本身, 也与凝聚态物理具有深刻联系 (比如拓扑序) -- 尽管我们并不知道这一猜想正确与否, 如果它不是对的, 那么隐藏在这一系列令人惊讶的事实背后的深层原因又会是什么呢?</p>
-          <div class="read-more">
-            <a href="/2018/10/07/games-qpcp-qma-hard/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/07/07/quantum-cook-levin/">随机行走与 Cook-Levin 定理的“量子化”</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-07-07
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/07/07/quantum-cook-levin/"
-             data-title="随机行走与 Cook-Levin 定理的“量子化”">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>这篇短文说的是如何用随机行走 (random walk) 和谱图论 (spectral graph theory) 来计算哈密顿量的谱隙 (spectral gap). 谱隙和凝聚态物理中的一系列性质相关, 比如说</p>
-<ul>
-<li>无谱隙 (gapless) 系统和临界 (critical) 现象, 比如说 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 中的无阻挫 (frustration-free) 系统;</li>
-<li>大家猜测某些有谱隙 (gapped) 系统满足面积定律 (area law), 这和哈密顿量基态的纠缠直接相关.<br>
-而从理论计算机科学的观点来看, 谱隙也可以视作 lower bound, 使用纯组合工具来证明似乎也在情理之中. 严格来说, 下文所需的数学基础仅有线性代数和离散数学 (一点图论), 以及熟悉量子信息中的记号 (如 Dirac 符号) 和基本概念 (如哈密顿量和基态).</li>
-</ul>
-          <div class="read-more">
-            <a href="/2018/07/07/quantum-cook-levin/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/07/07/games-qpcp-linearity-test/">量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-07-07
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/07/07/games-qpcp-linearity-test/"
-             data-title="量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>本文是量子 PCP 猜想的系列介绍的第三篇. 这一篇会给出经典 PCP 定理的一些直觉, 即指数规模的 PCP 定理 -- 也就是说我们有一个指数规模的"证明", 只通过检查常数行, 我们就能以极高的概率判断这一"证明"是否正确. 为了更高效地阅读证明, 我们需要对其编码得到"新证明", 于是要检查"新证明"是否正确编码, 以及编码前的"证明"是否是真的. 在指数规模 PCP 定理中, 我们可以用线性检测来检查编码的正确性, 这也是性质检测的早期结果之一. 那么为什么线性检测是对的呢, 或者说如何证明其可靠性? 通常可以用 Fourier 分析的简单性质可以证明, 不过我们会从群表示论 (特征标理论) 的角度来看待这一证明, 并设法联系 Gowers-Hatami 定理 -- 因而线性检测可以被推广到矩阵值函数上, 进而证明推广后的 Pauli 矩阵的量子线性检测的可靠性. 这也是交互式证明版本的量子 PCP 定理的证明中用到的关键技术之一.</p>
-          <div class="read-more">
-            <a href="/2018/07/07/games-qpcp-linearity-test/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/06/27/games-qpcp-self-testing/">量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-06-27
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/06/27/games-qpcp-self-testing/"
-             data-title="量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>本文量子 PCP 猜想的系列介绍的第二篇. 由于在量子交互式证明中, 证明者(玩家)和验证者(裁判)使用量子态通信并不会带来任何计算能力的提升, 我们只考虑证明者之间共享纠缠态的情形. 这一篇会从不同的角度介绍 entangled games. 其一是从字面椅子考虑, 说明什么是量子策略, 如何定义获胜概率, 以及量子测量会对获胜概率带来哪些优势. 其二则是从证明者们共享的纠缠态的视角, 介绍量子态的自检测 (self-testing), 即如果玩家们的获胜概率是几乎最优的话, 那么他们共享的量子态几乎是极大纠缠态. 有趣的是, 后者有非常漂亮的群(近似)表示论解释, 极大纠缠态的自检测实际上给出了关于 Pauli 矩阵非对易性的性质检测! 这一联系也是 games qPCP theorem 证明中的关键技术之一.</p>
-          <div class="read-more">
-            <a href="/2018/06/27/games-qpcp-self-testing/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/06/22/games-qpcp-interactive-proofs/">量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-06-22
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/06/22/games-qpcp-interactive-proofs/"
-             data-title="量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>本文量子 PCP 猜想的系列介绍的第一篇, 关于经典和量子交互式证明. 第一部分包括从 NP 开始给出交互式证明的一系列结果, 包括多轮交互式证明, 多个证明者的多伦交互式证明, 以及导出的一系列概率可检测证明 (PCP), 但是不会涉及任何密码学相关的结果. 之后, 解释 PCP 定理中概率可检查证明 (或者说局部可检测证明) 的意义, 以及 PCP 定理的其他表述形式 (与不可近似性的联系. 第二部分包括定义 NP 的量子对应 QMA 及其完全问题, 在此基础上给出量子交互式证明系统相关的复杂性类的一系列定义 (一个证明者是 QIP 和多个证明者是 MIP∗), 以及交互式证明版本的量子 PCP 猜想的定义. 最后介绍近年关于量子 PCP 猜想的几个弱化版本 (即 MIP∗ 的下界) 的结果, 并简要提及与 MIP∗ 的可能上界有关的结果.</p>
-          <div class="read-more">
-            <a href="/2018/06/22/games-qpcp-interactive-proofs/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/04/19/ugc/">说点 Unique Games Conjecture</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-04-19
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/04/19/ugc/"
-             data-title="说点 Unique Games Conjecture">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>前几天正好听了一次 Irit Dinur 的 seminar, 试着写点 UGC 相关的东西. 下面主要介绍 UGC 的来源 ( <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{NP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">N</span><span class="mord mathsf">P</span></span></span></span></span>-hardness 和 PCP 定理), 以及和 UGC 直接相关的进展.</p>
-          <div class="read-more">
-            <a href="/2018/04/19/ugc/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/04/01/permanent-boson-sampling/">积和式, 玻色采样和计数复杂性</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-04-01
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/04/01/permanent-boson-sampling/"
-             data-title="积和式, 玻色采样和计数复杂性">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>这篇会讲一讲积和式 (Permanent) 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-completeness, 以及玻色采样 (Boson Sampling) 之间的联系.</p>
-<p>用以展示量子计算优越性 (quantum conputational supremacy)<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 的候选问题有很多, 不过玻色采样 (Boson sampling) 很可能是知名度最高的问题之一. 这一问题的美妙之处在于, 它联系了线性光学和积和式 (permanent), 因为光子 (photon) 在不同的模数 (mode) 上的概率分布, 可以对应到某个积和式上; 而积和式在计算复杂性理论中具有独特的地位, 原因之一是它提供了第一个非平凡的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-complete 问题. 有趣的是, 基于线性光学的技术给出了新的规约手段, 因而一并导出了一些特定类型的矩阵, 即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>L</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">GL(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">G</span><span class="mord mathit">L</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>U</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">U(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.10903em;">U</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>p</mi><mo>(</mo><mn>2</mn><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Sp(2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span> 对应的积和式求值也是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">#</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{\#P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathsf">#</span><span class="mord mathsf">P</span></span></span></span></span>-complete 的<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
-          <div class="read-more">
-            <a href="/2018/04/01/permanent-boson-sampling/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/03/25/intro-hamiltonion-complexity/">量子哈密顿量复杂性浅说</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-03-25
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/凝聚态物理/">凝聚态物理</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/03/25/intro-hamiltonion-complexity/"
-             data-title="量子哈密顿量复杂性浅说">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>简单地说, 哈密顿量复杂性是从计算复杂性理论的角度来理解局部哈密顿量 (local Hamiltonian) 和基态 (包括基态本身和基态能量):</p>
-<ul>
-<li>从计算机科学的角度来看, 这是对约束可满足性问题 (constraint satisfaction problem, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{CSP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">S</span><span class="mord mathsf">P</span></span></span></span></span>) 的进一步推广, 而与之相关的一系列结果 (包括 PCP 定理) 在量子情形下的对应并不平凡;</li>
-<li>从物理学的角度来看, 它与基态 (也包括激发态) 的纠缠和关联刻画 (比如面积定律) 息息相关, 并在此基础上提供了一系列全新的数值算法 (因而亦与数值模拟相关).</li>
-</ul>
-<p>哈密顿量复杂性可以称为“量子计算”在观念上的一次革新, 在此之前大家对量子计算的理解限于量子算法 (如 Shor 算法) 和计算复杂性 (如对量子 Turing 机的正确刻画, 以及刻画量子计算机计算能力的复杂性类 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">Q</mi><mi mathvariant="sans-serif">P</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{BQP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.81944em;vertical-align:-0.125em;"></span><span class="base"><span class="mord"><span class="mord mathsf">B</span><span class="mord mathsf">Q</span><span class="mord mathsf">P</span></span></span></span></span>), 在此之后, 则开始<em>将理论计算机科学的思想和工具引入了理论物理 (主要是凝聚态物理)</em>, 并出现了一系列令人惊讶的结果.</p>
-          <div class="read-more">
-            <a href="/2018/03/25/intro-hamiltonion-complexity/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2018/03/19/HSP-LWE-lattice/">从 Shor 算法到格密码学</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2018-03-19
-        </span>
-        
-          <div class="post-category">
-            
-              <a href="/categories/理论计算机科学/">理论计算机科学</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/">量子计算理论</a>
-            
-              <a href="/categories/理论计算机科学/量子计算理论/密码学/">密码学</a>
-            
-          </div>
-        
-        
-        <div class="post-visits"
-             data-url="/2018/03/19/HSP-LWE-lattice/"
-             data-title="从 Shor 算法到格密码学">
-            Views
-          </div>
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>本文主要参考 Umesh Vazirani 在 Simons Institute 的 talk: <a href="https://www.youtube.com/watch?v=vHIK4AR_fVw" target="_blank" rel="noopener">Quantum and Post-Quantum Cryptography</a> , 说的是关于从一类非交换隐含子群问题到格密码(LWE)的简短历史, 稍微补充了一些细节. 值得一提的是, Oded Regev 关于使用 Learning with Errors (LWE) 作为困难假设的 Lattice-based cryptography 的工作<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>, 荣膺 <a href="http://eatcs.org/index.php/component/content/article/1-news/2670-2018-godel-prize" target="_blank" rel="noopener">2018 年 Gödel Prize</a>.</p>
-          <div class="read-more">
-            <a href="/2018/03/19/HSP-LWE-lattice/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    
+      <a class="next" href="/2019/04/02/supremacy-shadow-circuit/">
+        <span class="next-text nav-default">量子优越性和浅层量子线路</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
+
+  </article>
+
 
           </div>
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTE4NS8xMTcyMA">
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>  
+    
+  </div>
+
 
         </div>
       </main>
@@ -1061,6 +520,25 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
     </div>
 
     
+  
+  
+
+  
+   <script type="text/javascript">
+	(function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+
+
 
 
     
