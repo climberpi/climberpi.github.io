@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/</loc>
-    <lastmod>2019-11-25T19:06:57.891Z</lastmod>
+    <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
+    <lastmod>2019-12-02T14:34:40.750Z</lastmod>
     <data>
         <display>
-        <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
-        <pubTime>2018-06-22T17:11:56.000Z</pubTime>
+        <title>量子交互式证明可以验证停机问题吗?</title>
+        <pubTime>2019-11-19T21:09:38.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -29,12 +29,12 @@
 
     
   <url>
-    <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
-    <lastmod>2019-11-19T21:14:05.028Z</lastmod>
+    <loc>http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/</loc>
+    <lastmod>2019-11-25T19:06:57.891Z</lastmod>
     <data>
         <display>
-        <title>量子交互式证明可以验证停机问题吗?</title>
-        <pubTime>2019-11-19T21:09:38.000Z</pubTime>
+        <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
+        <pubTime>2018-06-22T17:11:56.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
