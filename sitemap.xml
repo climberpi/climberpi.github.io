@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
+    
+    <lastmod>2019-12-09T17:53:03.354Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
     
-    <lastmod>2019-12-02T14:34:40.750Z</lastmod>
+    <lastmod>2019-12-02T14:37:41.116Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/</loc>
     
     <lastmod>2019-11-25T19:06:57.891Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
-    
-    <lastmod>2019-08-30T08:30:20.920Z</lastmod>
     
   </url>
   

@@ -4,8 +4,33 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
+    <lastmod>2019-12-09T17:53:03.354Z</lastmod>
+    <data>
+        <display>
+        <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
+        <pubTime>2018-07-07T09:23:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
-    <lastmod>2019-12-02T14:34:40.750Z</lastmod>
+    <lastmod>2019-12-02T14:37:41.116Z</lastmod>
     <data>
         <display>
         <title>量子交互式证明可以验证停机问题吗?</title>
@@ -35,31 +60,6 @@
         <display>
         <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
         <pubTime>2018-06-22T17:11:56.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
-    <lastmod>2019-08-30T08:30:20.920Z</lastmod>
-    <data>
-        <display>
-        <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
-        <pubTime>2018-07-07T09:23:02.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
