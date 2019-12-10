@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
+    <lastmod>2019-12-10T07:10:38.476Z</lastmod>
+    <data>
+        <display>
+        <title>量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证</title>
+        <pubTime>2018-06-27T09:44:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
     <lastmod>2019-12-09T17:56:33.262Z</lastmod>
     <data>
@@ -135,31 +160,6 @@
         <display>
         <title>量子 PCP 猜想浅说 (四): 量子 PCP 定理及其他</title>
         <pubTime>2018-10-07T12:34:45.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
-    <lastmod>2018-07-14T08:10:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证</title>
-        <pubTime>2018-06-27T09:44:02.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          

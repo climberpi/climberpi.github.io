@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
+    
+    <lastmod>2019-12-10T07:10:38.476Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
     
     <lastmod>2019-12-09T17:56:33.262Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://climberpi.github.io/2018/10/07/games-qpcp-qma-hard/</loc>
     
     <lastmod>2018-10-07T08:08:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
-    
-    <lastmod>2018-07-14T08:10:30.000Z</lastmod>
     
   </url>
   
