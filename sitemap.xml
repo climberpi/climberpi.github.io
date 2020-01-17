@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
+    
+    <lastmod>2020-01-17T20:48:05.860Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
     
-    <lastmod>2019-12-10T07:10:38.476Z</lastmod>
+    <lastmod>2020-01-17T19:37:56.959Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
+    
+    <lastmod>2020-01-15T14:47:53.726Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://climberpi.github.io/2018/07/07/games-qpcp-linearity-test/</loc>
     
     <lastmod>2019-12-09T17:56:33.262Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
-    
-    <lastmod>2019-12-02T14:37:41.116Z</lastmod>
     
   </url>
   

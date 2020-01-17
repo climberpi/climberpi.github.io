@@ -4,12 +4,62 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
+    <lastmod>2020-01-17T20:48:05.860Z</lastmod>
+    <data>
+        <display>
+        <title>一份关于 MIP*=RE 的不太长的介绍</title>
+        <pubTime>2020-01-17T20:33:47.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2018/06/27/games-qpcp-self-testing/</loc>
-    <lastmod>2019-12-10T07:10:38.476Z</lastmod>
+    <lastmod>2020-01-17T19:37:56.959Z</lastmod>
     <data>
         <display>
         <title>量子 PCP 猜想浅说 (二): 量子纠缠的交互式证明验证</title>
         <pubTime>2018-06-27T09:44:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
+    <lastmod>2020-01-15T14:47:53.726Z</lastmod>
+    <data>
+        <display>
+        <title>量子交互式证明可以验证停机问题吗?</title>
+        <pubTime>2019-11-19T21:09:38.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -35,31 +85,6 @@
         <display>
         <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
         <pubTime>2018-07-07T09:23:02.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2019/11/19/is-halting-in-MIP*/</loc>
-    <lastmod>2019-12-02T14:37:41.116Z</lastmod>
-    <data>
-        <display>
-        <title>量子交互式证明可以验证停机问题吗?</title>
-        <pubTime>2019-11-19T21:09:38.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
