@@ -4,8 +4,33 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2020/01/19/space-complexity-meets-determinant/</loc>
+    <lastmod>2020-01-19T15:05:58.778Z</lastmod>
+    <data>
+        <display>
+        <title>当对数空间复杂性遇上强联通图和行列式</title>
+        <pubTime>2020-01-19T15:04:44.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
-    <lastmod>2020-01-17T20:48:05.860Z</lastmod>
+    <lastmod>2020-01-19T14:42:59.357Z</lastmod>
     <data>
         <display>
         <title>一份关于 MIP*=RE 的不太长的介绍</title>
