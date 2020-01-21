@@ -4,12 +4,42 @@
 
     
   <url>
-    <loc>http://climberpi.github.io/2020/01/19/space-complexity-meets-determinant/</loc>
-    <lastmod>2020-01-19T15:05:58.778Z</lastmod>
+    <loc>http://climberpi.github.io/2020/01/21/ETH-atypical-applications/</loc>
+    <lastmod>2020-01-21T20:38:42.439Z</lastmod>
     <data>
         <display>
-        <title>当对数空间复杂性遇上强联通图和行列式</title>
-        <pubTime>2020-01-19T15:04:44.000Z</pubTime>
+        <title>(强)指数时间假设非典型应用两则</title>
+        <pubTime>2020-01-21T20:38:42.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+        <tag>计算复杂性理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+             
+              <breadCrumb title="计算复杂性理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E6%80%A7%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
+    <lastmod>2020-01-21T20:26:36.454Z</lastmod>
+    <data>
+        <display>
+        <title>一份关于 MIP*=RE 的不太长的介绍</title>
+        <pubTime>2020-01-17T20:33:47.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -29,12 +59,12 @@
 
     
   <url>
-    <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
-    <lastmod>2020-01-19T14:42:59.357Z</lastmod>
+    <loc>http://climberpi.github.io/2020/01/19/space-complexity-meets-determinant/</loc>
+    <lastmod>2020-01-19T15:05:58.778Z</lastmod>
     <data>
         <display>
-        <title>一份关于 MIP*=RE 的不太长的介绍</title>
-        <pubTime>2020-01-17T20:33:47.000Z</pubTime>
+        <title>当对数空间复杂性遇上强联通图和行列式</title>
+        <pubTime>2020-01-19T15:04:44.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          

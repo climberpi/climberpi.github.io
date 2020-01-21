@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://climberpi.github.io/2020/01/19/space-complexity-meets-determinant/</loc>
+    <loc>http://climberpi.github.io/2020/01/21/ETH-atypical-applications/</loc>
     
-    <lastmod>2020-01-19T15:05:58.778Z</lastmod>
+    <lastmod>2020-01-21T20:38:42.439Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
     
-    <lastmod>2020-01-19T14:42:59.357Z</lastmod>
+    <lastmod>2020-01-21T20:26:36.454Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://climberpi.github.io/2020/01/19/space-complexity-meets-determinant/</loc>
+    
+    <lastmod>2020-01-19T15:05:58.778Z</lastmod>
     
   </url>
   
