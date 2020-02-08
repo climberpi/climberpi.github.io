@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
+    <lastmod>2020-02-08T20:49:54.692Z</lastmod>
+    <data>
+        <display>
+        <title>一份关于 MIP*=RE 的不太长的介绍</title>
+        <pubTime>2020-01-17T20:33:47.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2018/04/01/permanent-boson-sampling/</loc>
     <lastmod>2020-02-08T20:47:17.493Z</lastmod>
     <data>
@@ -65,31 +90,6 @@
         <display>
         <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
         <pubTime>2018-06-22T17:11:56.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2020/01/17/MIP*-eq-RE/</loc>
-    <lastmod>2020-01-22T14:44:02.006Z</lastmod>
-    <data>
-        <display>
-        <title>一份关于 MIP*=RE 的不太长的介绍</title>
-        <pubTime>2020-01-17T20:33:47.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
