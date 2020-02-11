@@ -4,8 +4,38 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2020/01/21/ETH-atypical-applications/</loc>
+    <lastmod>2020-02-11T21:01:49.682Z</lastmod>
+    <data>
+        <display>
+        <title>(强)指数时间假设非典型应用两则</title>
+        <pubTime>2020-01-21T20:38:42.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+        <tag>计算复杂性理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+             
+              <breadCrumb title="计算复杂性理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E6%80%A7%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2018/04/01/permanent-boson-sampling/</loc>
-    <lastmod>2020-02-10T18:40:28.919Z</lastmod>
+    <lastmod>2020-02-11T18:49:22.188Z</lastmod>
     <data>
         <display>
         <title>积和式, 玻色采样和计数复杂性</title>
@@ -47,36 +77,6 @@
           
              
               <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2020/01/21/ETH-atypical-applications/</loc>
-    <lastmod>2020-02-05T13:42:45.402Z</lastmod>
-    <data>
-        <display>
-        <title>(强)指数时间假设非典型应用两则</title>
-        <pubTime>2020-01-21T20:38:42.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-        <tag>计算复杂性理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-             
-              <breadCrumb title="计算复杂性理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E6%80%A7%E7%90%86%E8%AE%BA/"/>
           
         </display>
     </data>
