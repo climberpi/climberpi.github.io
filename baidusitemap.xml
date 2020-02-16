@@ -4,8 +4,58 @@
 
     
   <url>
+    <loc>http://climberpi.github.io/2019/04/02/supremacy-shadow-circuit/</loc>
+    <lastmod>2020-02-16T15:48:20.127Z</lastmod>
+    <data>
+        <display>
+        <title>量子优越性和浅层量子线路</title>
+        <pubTime>2019-04-02T20:50:02.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/</loc>
+    <lastmod>2020-02-16T15:47:58.873Z</lastmod>
+    <data>
+        <display>
+        <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
+        <pubTime>2018-06-22T17:11:56.000Z</pubTime>
+        
+        <tag>理论计算机科学</tag>
+         
+        <tag>量子计算理论</tag>
+         
+         
+           
+             
+              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://climberpi.github.io/2020/01/21/ETH-atypical-applications/</loc>
-    <lastmod>2020-02-11T21:01:49.682Z</lastmod>
+    <lastmod>2020-02-12T09:42:59.453Z</lastmod>
     <data>
         <display>
         <title>(强)指数时间假设非典型应用两则</title>
@@ -65,31 +115,6 @@
         <display>
         <title>一份关于 MIP*=RE 的不太长的介绍</title>
         <pubTime>2020-01-17T20:33:47.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2018/06/22/games-qpcp-interactive-proofs/</loc>
-    <lastmod>2020-01-30T14:17:29.252Z</lastmod>
-    <data>
-        <display>
-        <title>量子 PCP 猜想浅说 (一): 当交互式证明遇上量子纠缠</title>
-        <pubTime>2018-06-22T17:11:56.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
@@ -190,31 +215,6 @@
         <display>
         <title>量子 PCP 猜想浅说 (三): Pauli 矩阵的线性检测</title>
         <pubTime>2018-07-07T09:23:02.000Z</pubTime>
-        
-        <tag>理论计算机科学</tag>
-         
-        <tag>量子计算理论</tag>
-         
-         
-           
-             
-              <breadCrumb title="理论计算机科学" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="量子计算理论" url="http://climberpi.github.io/categories/%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://climberpi.github.io/2019/04/02/supremacy-shadow-circuit/</loc>
-    <lastmod>2019-04-02T20:55:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>量子优越性和浅层量子线路</title>
-        <pubTime>2019-04-02T20:50:02.000Z</pubTime>
         
         <tag>理论计算机科学</tag>
          
