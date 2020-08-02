@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/</loc>
+    
+    <lastmod>2020-08-02T12:00:55.215Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://climberpi.github.io/2018/07/07/quantum-cook-levin/</loc>
     
     <lastmod>2020-02-22T21:02:00.856Z</lastmod>
@@ -96,13 +103,6 @@
     <loc>http://climberpi.github.io/about/index.html</loc>
     
     <lastmod>2018-04-01T15:58:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://climberpi.github.io/2018/03/25/intro-hamiltonion-complexity/</loc>
-    
-    <lastmod>2018-04-01T15:45:14.000Z</lastmod>
     
   </url>
   
