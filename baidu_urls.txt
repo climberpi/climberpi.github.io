@@ -1,3 +1,4 @@
+http://climberpi.github.io/2022/07/02/quantum-proof-extractor-derandomization/
 http://climberpi.github.io/2021/07/30/qsvt-amplitude-amplification/
 http://climberpi.github.io/2020/01/21/ETH-atypical-applications/
 http://climberpi.github.io/2020/01/19/space-complexity-meets-determinant/
